@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-route'
+import { createRouter, createWebHistory } from 'vue-router';
 
 import CoachDetail from './components/coaches/CoachDetail.vue';
 import CoachesList from './components/coaches/CoachesList.vue';
@@ -20,3 +20,5 @@ const router =  createRouter({
         { path: '/:notFound(.*)', component: NotFound }, // adding reg expression(.*) to allow the route to accept any input passed
     ], 
 });
+
+export default router;
